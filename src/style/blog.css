@@ -1,0 +1,137 @@
+.blog{
+    margin: 3rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blog-container  .h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: rgb(6, 92, 92);
+    margin-bottom:5rem ;
+    letter-spacing: 2px;
+    position: relative;
+    
+    
+}
+.blog-container  .h1::after{ 
+    content: "";
+    position: absolute;
+    width: 60px;
+    bottom: -10px;
+    background-color: rgb(219, 161, 14);
+    height: 5px;
+    border-radius: 3px
+
+}
+
+.blog-element{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center
+}
+
+.maincontainer{
+    position: relative;
+    width: 300px;
+    height: 395px;
+    box-shadow: 0px 2px 5px 0px rgba(115,103,103,0.75);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(115,103,103,0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(115,103,103,0.75);
+   border-radius: 10px ;
+   overflow: hidden;
+   transition: all 1s ease-in-out;
+}
+.maincontainer .img1{
+    width: 100%;
+}
+.maincontainer:hover .thecard{
+    transform: rotateY(180deg);
+}
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 3s ease;
+    
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+ 
+    color:black;
+}
+.thefront-div1{
+   padding: 1rem;
+}
+.thefront-div1 h2{
+margin-bottom: 10px;
+color: rgb(6, 92, 92);
+}
+.thefront-div1 p{
+font-size: 13px;
+text-align: justify;
+color: gray;
+
+}
+.thefront-div{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thefront-div img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(
+  45deg,
+  hsl(240deg 71% 41%) 0%,
+  hsl(236deg 68% 43%) 11%,
+  hsl(233deg 64% 46%) 22%,
+  hsl(231deg 60% 48%) 33%,
+  hsl(230deg 58% 51%) 44%,
+  hsl(228deg 59% 54%) 56%,
+  hsl(227deg 61% 57%) 67%,
+  hsl(226deg 62% 59%) 78%,
+  hsl(225deg 62% 62%) 89%,
+  hsl(224deg 63% 65%) 100%
+);
+}
+.theback button{
+    padding: .4rem .7rem;
+    background-color: rgb(104, 103, 103);
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+.theback button:hover{
+    background-color: white;
+    color: cadetblue;
+}

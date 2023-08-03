@@ -1,0 +1,72 @@
+.touch{
+    margin: 5rem 0;
+   position: relative;
+   height: 100vh;
+   width: 100%;
+ 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+   
+}
+.touch-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+}
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.touch-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.text-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    flex-direction: column;
+    padding: 3rem;
+    border: 4px solid white;
+    gap: 2rem;
+}
+.text-element .h2{
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-inline: auto;
+    width: 100%;
+}
+
+
+
+.text-element p{
+    line-height: 1.3;
+}
+.text-element button{
+   padding: .7rem;
+   color: rgb(219, 161, 14);
+    border: none;
+    font-weight: 600;
+    border-radius: 14px;
+    
+}

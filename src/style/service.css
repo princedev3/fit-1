@@ -1,0 +1,111 @@
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0;
+
+}
+.service-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section:hover {
+    background-color: rgb(219, 161, 14);
+   
+}
+.section:hover p{
+ 
+    color: white;
+}
+.section:hover .service-icon{
+ 
+    color: white;
+}
+.section:hover .below-section-1 h2::after{
+    background-color: white;
+    
+}
+.section:hover h2{
+ 
+    color: white;
+}
+
+.service-container h1{
+    
+    margin-bottom: 3rem;
+    position: relative;
+    letter-spacing: 2px;
+    color: rgb(6, 92, 92);
+}
+.service-container h1::after{
+ 
+    position: absolute;
+    content: "";
+    left: 30px;
+    width: 50px;
+    height: 4px;
+    background-color:rgb(219, 161, 14) ;
+    bottom: -4rem;
+    margin-bottom: 3rem;
+    border-radius: 2px;
+}
+.service-below{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+.section{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+    border-radius: 20px;
+   
+}
+.service-below-1{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.service-below-1 p{
+    margin-top: 2rem;
+    text-align: justify;
+    line-height: 1.3;
+    color: rgb(110, 109, 109);
+}
+.below-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.below-section-1 h2{
+    color: rgb(6, 92, 92);
+    letter-spacing: 1px;
+    position: relative;
+}
+.below-section-1 h2::after{
+  position: absolute;
+  width: 50px;
+  content: "";
+  height: 4px;
+  background-color: rgb(219, 161, 14);
+  bottom: -14px;
+align-items: center;
+transform: translateX(100%);
+display: flex;
+justify-content: center;
+  border-radius: 3px;
+}
+
+.service-icon{
+    color: rgb(6, 92, 92);
+}
