@@ -48,7 +48,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .6rem;
+    gap: .3rem;
 }
 .approach-1{
     width: 200px;
@@ -124,16 +124,22 @@
     row-gap: 1rem;
   }
   }
+
 @media screen and (max-width: 480px){
+    .approach{
+        
+    }
   .approach-top p{
- 
     width: 80%;
   }
   .approach-below{
- 
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    row-gap: 1rem;
+    row-gap: .4rem;
+    
+  }
+  .approach-1{
+    width: 180px;
   }
   }
   
